@@ -10,15 +10,19 @@ import UIKit
 
 class LocationCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func updateViews(with location: Location) {
+        nameLabel.text = location.name
+        latitudeLabel.text = String(format:"%f", location.latitude)
+        longitudeLabel.text = String(format:"%f", location.longitude)
     }
 
 }
