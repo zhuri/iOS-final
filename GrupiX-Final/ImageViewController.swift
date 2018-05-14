@@ -31,7 +31,9 @@ extension ImageViewController: UICollectionViewDataSource {
         let url:URL = URL.init(fileURLWithPath: "https://picsum.photos/200/300?random")
         load(url: url)
         cell.imageView.image = self.image
-        
+        //let URLStr = self.images[indexPath.row]
+        //let data = NSData(contentsOf: NSURL(string: URLStr)! as URL)
+        //cell.imageView.image = UIImage(data: data! as Data)
         return cell
     }
     
