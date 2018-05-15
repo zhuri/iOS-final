@@ -20,9 +20,8 @@ class LocationCell: UITableViewCell {
     }
     
     func updateViews(with location: Location) {
-        nameLabel.text = location.name
-        latitudeLabel.text = String(format:"%f", location.latitude)
-        longitudeLabel.text = String(format:"%f", location.longitude)
+        self.nameLabel.text = location.name
+        self.latitudeLabel.text = String(format:"%f", location.latitude)
+        self.longitudeLabel.text = String(format:"%f", location.longitude)
     }
-
 }

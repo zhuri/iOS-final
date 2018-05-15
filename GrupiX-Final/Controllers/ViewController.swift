@@ -71,6 +71,8 @@ class ViewController: UIViewController {
         
         do{
             try context.save()
+            print("came here")
+            self.tableView.reloadData()
         } catch{
             print("fail to save")
         }
@@ -91,6 +93,7 @@ class ViewController: UIViewController {
                 let longitude = data.value(forKey: "longitude") as! Double
                 let location = Location(id: id, name: name, latitude: latitude, longitude: longitude)
                 locationsArray.append(location)
+                self.tableView.reloadData()
                 print(location.name)
             }
             
