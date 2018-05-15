@@ -17,9 +17,6 @@ target 'GrupiX-Final' do
     # Pods for testing
   end
 
-
-  target 'GrupiX-Final' do
-    pod 'Alamofire', '~> 4.7'
-  end
-
+  pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
 end

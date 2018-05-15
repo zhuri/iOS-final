@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func fillLocationsArray(){
+    private func fillLocationsArray() {
         let context = appDelegate.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Locations")
         request.returnsObjectsAsFaults = false
@@ -119,7 +119,7 @@ extension ViewController: UITableViewDataSource{
     }
 }
 
-extension ViewController: UITableViewDelegate{
+extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let qyteti = qytetet[indexPath.row]
 //

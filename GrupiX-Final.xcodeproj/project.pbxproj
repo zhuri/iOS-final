@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D1F4F320AA21FD0063213F /* ApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F4F220AA21FD0063213F /* ApiViewController.swift */; };
+		18D1F4F520AA229D0063213F /* ApiViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F4F420AA229D0063213F /* ApiViewCell.swift */; };
+		18D1F4F820AA262D0063213F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F4F720AA262D0063213F /* LocationService.swift */; };
+		18D1F4FA20AA37BC0063213F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D1F4F920AA37BC0063213F /* NetworkExtension.framework */; };
+		18D1F4FD20AA3DD20063213F /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F4FC20AA3DD20063213F /* City.swift */; };
+		18D1F50220AB6F670063213F /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F50120AB6F670063213F /* CityViewController.swift */; };
 		2F55B25B09754751BE0445A6 /* Pods_GrupiX_FinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E101F5CE4626BDC2AF1F7643 /* Pods_GrupiX_FinalUITests.framework */; };
 		47C442A33E8D98589F1ACF0B /* Pods_GrupiX_FinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9534E7F09D089D0299EB0A /* Pods_GrupiX_FinalTests.framework */; };
 		E549E91620A2FC0800B63F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549E91520A2FC0800B63F88 /* AppDelegate.swift */; };
@@ -42,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18D1F4F020AA0ECE0063213F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D1F4F220AA21FD0063213F /* ApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewController.swift; sourceTree = "<group>"; };
+		18D1F4F420AA229D0063213F /* ApiViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewCell.swift; sourceTree = "<group>"; };
+		18D1F4F720AA262D0063213F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		18D1F4F920AA37BC0063213F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		18D1F4FB20AA37BC0063213F /* GrupiX-Final.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GrupiX-Final.entitlements"; sourceTree = "<group>"; };
+		18D1F4FC20AA3DD20063213F /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		18D1F50120AB6F670063213F /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		46B2A84BFB2624EBB29164AB /* Pods-GrupiX-FinalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrupiX-FinalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrupiX-FinalTests/Pods-GrupiX-FinalTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C5D344A400E5B6EB2351693 /* Pods-GrupiX-FinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrupiX-FinalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrupiX-FinalUITests/Pods-GrupiX-FinalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		602E03997D3A2456911F1290 /* Pods-GrupiX-Final.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrupiX-Final.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrupiX-Final/Pods-GrupiX-Final.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE8CE78B4775B378CD46BAAD /* Pods_GrupiX_Final.framework in Frameworks */,
+				18D1F4FA20AA37BC0063213F /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +114,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D1F4F620AA25540063213F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18D1F4F720AA262D0063213F /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18D1F50020AB1E080063213F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18D1F4F220AA21FD0063213F /* ApiViewController.swift */,
+				E549E94C20A3168D00B63F88 /* ImageViewController.swift */,
+				E549E91720A2FC0800B63F88 /* ViewController.swift */,
+				18D1F50120AB6F670063213F /* CityViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2E054EDD599A2DA52FF4BBE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18D1F4F920AA37BC0063213F /* NetworkExtension.framework */,
+				18D1F4F020AA0ECE0063213F /* Alamofire.framework */,
 				F384CB0206A05DAE753B3E1E /* Pods_GrupiX_Final.framework */,
 				EF9534E7F09D089D0299EB0A /* Pods_GrupiX_FinalTests.framework */,
 				E101F5CE4626BDC2AF1F7643 /* Pods_GrupiX_FinalUITests.framework */,
@@ -147,15 +183,16 @@
 		E549E91420A2FC0800B63F88 /* GrupiX-Final */ = {
 			isa = PBXGroup;
 			children = (
+				18D1F50020AB1E080063213F /* Controllers */,
+				18D1F4F620AA25540063213F /* Services */,
 				E549E94920A2FF2B00B63F88 /* Cells */,
 				E549E94620A2FCC300B63F88 /* Models */,
 				E549E91520A2FC0800B63F88 /* AppDelegate.swift */,
-				E549E91720A2FC0800B63F88 /* ViewController.swift */,
-				E549E94C20A3168D00B63F88 /* ImageViewController.swift */,
 				E549E91920A2FC0800B63F88 /* Main.storyboard */,
 				E549E91F20A2FC0D00B63F88 /* Assets.xcassets */,
 				E549E92120A2FC0D00B63F88 /* LaunchScreen.storyboard */,
 				E549E92420A2FC0D00B63F88 /* Info.plist */,
+				18D1F4FB20AA37BC0063213F /* GrupiX-Final.entitlements */,
 				E549E91C20A2FC0800B63F88 /* GrupiX_Final.xcdatamodeld */,
 			);
 			path = "GrupiX-Final";
@@ -183,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				E549E94720A2FCD500B63F88 /* Location.swift */,
+				18D1F4FC20AA3DD20063213F /* City.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +230,7 @@
 			children = (
 				E549E94A20A2FF5000B63F88 /* LocationCell.swift */,
 				E56F3BC820A9E32500AC8C82 /* ImageViewCell.swift */,
+				18D1F4F420AA229D0063213F /* ApiViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -207,6 +246,7 @@
 				E549E90E20A2FC0800B63F88 /* Sources */,
 				E549E90F20A2FC0800B63F88 /* Frameworks */,
 				E549E91020A2FC0800B63F88 /* Resources */,
+				F7E7943B34128DC8EFFE219A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +307,11 @@
 				TargetAttributes = {
 					E549E91120A2FC0800B63F88 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E549E92820A2FC0D00B63F88 = {
 						CreatedOnToolsVersion = 9.3;
@@ -380,6 +425,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F7E7943B34128DC8EFFE219A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GrupiX-Final/Pods-GrupiX-Final-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrupiX-Final/Pods-GrupiX-Final-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,11 +454,16 @@
 			files = (
 				E549E91820A2FC0800B63F88 /* ViewController.swift in Sources */,
 				E56F3BC920A9E32500AC8C82 /* ImageViewCell.swift in Sources */,
+				18D1F4F820AA262D0063213F /* LocationService.swift in Sources */,
 				E549E94B20A2FF5000B63F88 /* LocationCell.swift in Sources */,
+				18D1F4F520AA229D0063213F /* ApiViewCell.swift in Sources */,
+				18D1F4F320AA21FD0063213F /* ApiViewController.swift in Sources */,
 				E549E91E20A2FC0800B63F88 /* GrupiX_Final.xcdatamodeld in Sources */,
+				18D1F4FD20AA3DD20063213F /* City.swift in Sources */,
 				E549E94820A2FCD500B63F88 /* Location.swift in Sources */,
 				E549E94D20A3168D00B63F88 /* ImageViewController.swift in Sources */,
 				E549E91620A2FC0800B63F88 /* AppDelegate.swift in Sources */,
+				18D1F50220AB6F670063213F /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +637,9 @@
 			baseConfigurationReference = 602E03997D3A2456911F1290 /* Pods-GrupiX-Final.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GrupiX-Final/GrupiX-Final.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P88U5H6FN;
 				INFOPLIST_FILE = "GrupiX-Final/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,7 +657,9 @@
 			baseConfigurationReference = 7B60408E7F976095D45D3684 /* Pods-GrupiX-Final.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GrupiX-Final/GrupiX-Final.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P88U5H6FN;
 				INFOPLIST_FILE = "GrupiX-Final/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
